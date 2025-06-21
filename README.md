@@ -18,70 +18,76 @@ pet-adoption-api/
 ├── server.js                 # Entry point of the backend server
 ├── package.json              # Backend dependencies
 └── README.md                 # Project documentation
+```
+---
 
-🚀 How to Run the Project Locally
-📡 Backend Setup
-Open terminal and navigate to the project root:
-
-
-cd pet-adoption-api
-Install backend dependencies:
-
-npm install
-Start the backend server:
-
-
-npm start
+## 🚀 How to Run the Project Locally
+### 📡 Backend Setup
+1. Open terminal and navigate to the project root:
+   ```plaintext
+   cd pet-adoption-api
+   ```
+2. Install backend dependencies:
+   ```plaintext
+   npm install
+   ```
+3. Start the backend server:
+   ```plaintext
+   npm start
+   ```
 The backend will run at:
 http://localhost:5000
-
-💻 Frontend Setup
-Open a new terminal.
-
-Navigate to the frontend folder:
-
-cd pet-adoption-frontend
-Install frontend dependencies:
-
-
-npm install
-Start the React development server:
-
-
-npm start
+---
+### 💻 Frontend Setup
+1. Open a new terminal.
+2. Navigate to the frontend folder:
+   ```plaintext
+   cd pet-adoption-frontend
+   ```
+3. Install frontend dependencies:
+   ```plaintext
+    npm install
+   ```
+4. Start the React development server:
+   ```pliantext
+   npm start
+   ```
 The frontend will run at:
 http://localhost:3000
 
-🌐 API Endpoints
-Endpoint	Method	Description
-/api/pets	GET	Get all pets
-/api/pets/:id	GET	Get pet by ID
-/api/pets	POST	Add new pet (image upload)
-/api/pets/:id	PUT	Update pet status
-/api/pets/:id	DELETE	Delete pet
+---
 
-📤 Example: Add New Pet (POST)
-URL: http://localhost:5000/api/pets
+## 🌐 API Endpoints
 
-Method: POST
+| Endpoint       | Method | Description               |
+|----------------|--------|---------------------------|
+| `/api/pets`    | GET    | Get all pets              |
+| `/api/pets/:id`| GET    | Get pet by ID             |
+| `/api/pets`    | POST   | Add new pet (image upload) |
+| `/api/pets/:id`| PUT    | Update pet status         |
+| `/api/pets/:id`| DELETE | Delete pet                |
 
-Body Type: form-data
+---
 
-Fields:
-name - Text
+# 📤 Example: Add New Pet (POST)
 
-age - Text
+**URL:** `http://localhost:5000/api/pets`  
+**Method:** POST  
 
-breed - Text
+### Body Type: `form-data`
 
-species - Text
+#### Fields:
+- `name` - Text
+- `age` - Text
+- `breed` - Text
+- `species` - Text
+- `description` - Text
+- `image` - File (select image from your computer)
 
-description - Text
+---
 
-image - File (select image from your computer)
-
-✅ Example Response:
-
+## ✅ Example Response:
+```json
 {
   "_id": "unique_pet_id",
   "name": "Bella",
@@ -93,44 +99,52 @@ image - File (select image from your computer)
   "status": "Available",
   "__v": 0
 }
-🔍 Search & Filter (Frontend)
-Search pets by name or species using the search bar.
+```
+## 🔍 Search & Filter (Frontend)
 
-View only pets that match the search criteria.
+- Search pets by **name** or **species** using the search bar.
+- View only pets that match the search criteria.
 
-🖼️ Features
-View all pets.
+---
 
-Search and filter pets.
+## 🖼️ Features
 
-Add pets with image upload.
+- View all pets.
+- Search and filter pets.
+- Add pets with **image upload**.
+- Image preview during pet addition.
+- Mark pets as **Adopted**.
+- Delete pets.
 
-Image preview during pet addition.
+---
 
-Mark pets as Adopted.
+## 🔗 Postman Collection
 
-Delete pets.
-
-🔗 Postman Collection
-👉 Postman API Collection Link
+👉 **Postman API Collection Link:**  
 https://documenter.getpostman.com/view/45047196/2sB2xBDVve
 
+---
 
-🤝 Contributing
-Fork the repository.
+## 🤝 Contributing
 
-Create your feature branch:
+1. Fork the repository.
+2. Create your feature branch:
+   ```bash
+   git checkout -b feature/YourFeature
+   ```
+3. Commit your changes:
+   ```
+   git commit -m "Add new feature"
+   ```
+4. Push to the branch:
+   ```
+   git push origin feature/YourFeature
+   ```
+5. Open a pull request.
 
-git checkout -b feature/YourFeature
-Commit your changes:
+---
 
-
-git commit -m "Add new feature"
-Push to the branch:
-
-
-git push origin feature/YourFeature
-Open a pull request.
-
-📜 License
+## 📜 License
 This project is licensed under the MIT License.
+
+
