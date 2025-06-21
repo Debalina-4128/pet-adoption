@@ -118,6 +118,12 @@ http://localhost:3000
 
 ---
 
+## 🔗 API Documentation
+Full API documentation and Postman Collection:
+👉 [API Docs & Postman Collection](https://bitter-confidence-357.notion.site/Pet-Adoption-Center-API-Documentation-2195e47c982280e0a3dfd970e56ec24e?source=copy_link)
+
+---
+
 ## 🔗 Postman Collection
 
 👉 **Postman API Collection Link:**  
@@ -145,6 +151,8 @@ https://documenter.getpostman.com/view/45047196/2sB2xBDVve
 ---
 
 ## 📜 License
-This project is licensed under the MIT License.
+
+This project is licensed under the [MIT License](./LICENSE).
+
 
 
