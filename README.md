@@ -7,17 +7,34 @@ This is a **Full Stack Pet Adoption Center** project that allows users to:
 
 ---
 
+## ⚙️ Tech Stack
+- **Backend**: Node.js, Express.js
+- **Database**: MongoDB (local), MongoMemoryServer (for tests)
+- **ORM**: Mongoose
+- **Image Upload**: Multer
+- **Testing**: Jest, Supertest, mongodb-memory-server
+- **Development Tools**: Nodemon, Cross-Env
+
 ## 📂 Project Structure
 ```plaintext
 pet-adoption-api/
-├── controllers/              # Backend Controllers
-├── models/                   # Mongoose Models
-├── pet-adoption-frontend/    # React Frontend
-├── routes/                   # Express Routes
-├── uploads/                  # Uploaded Images (static folder)
-├── server.js                 # Entry point of the backend server
-├── package.json              # Backend dependencies
-└── README.md                 # Project documentation
+├── server.js
+├── app.js
+├── package.json
+├── models/
+│   └── Pet.js
+├── routes/
+│   └── petRoutes.js
+├── controllers/
+│   └── petController.js
+├── uploads/
+├── tests/
+│   ├── unit/
+│   ├── integration/
+│   └── api/
+│       └── petAPI.test.js
+└── README.md
+
 ```
 ---
 
@@ -54,6 +71,18 @@ http://localhost:5000
    ```
 The frontend will run at:
 http://localhost:3000
+
+### Run the tests:
+```plaintext
+npm test
+```
+
+---
+
+## 🧪 Testing Tools
+- **Jest**: JavaScript testing framework
+- **Supertest**: API endpoint testing
+- **mongodb-memory-server**: In-memory MongoDB server for isolated integration tests
 
 ---
 
@@ -117,6 +146,11 @@ http://localhost:3000
 - Delete pets.
 
 ---
+
+## 📊 Test Coverage Screenshot
+
+### Unit testing
+![Unit test](
 
 ## 🔗 API Documentation
 Full API documentation and Postman Collection:
