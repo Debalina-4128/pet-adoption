@@ -150,7 +150,13 @@ npm test
 ## 📊 Test Coverage Screenshot
 
 ### Unit testing
-![Unit test](
+![Image](https://github.com/user-attachments/assets/d4ccc864-f39d-4657-bb9a-337bd59bbaf7)
+
+### Integration testing
+![Image](https://github.com/user-attachments/assets/83473489-e1a8-4051-a1fd-f4a7df6a5abf)
+
+### API testing
+![Image](https://github.com/user-attachments/assets/fab7dbf7-3178-4bc4-9864-cdcf259a83f2)
 
 ## 🔗 API Documentation
 Full API documentation and Postman Collection:
